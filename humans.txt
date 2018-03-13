@@ -3,11 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <email>
+	Wiktor Malinowski -- project manager & programmer -- e-mail: wiktor.malinowski@lo1.sandomierz.pl
+	
+	Micha³ Rawski -- programmer -- e-mail: michal.rawski@lo1.sandomierz.pl
+
+	Adam Garnuszek -- programer -- e-mail: adam.garnuszek@lo1.sandomierz.pl
 
 # THANKS
 
-    <name>
 
 # TECHNOLOGY COLOPHON
 

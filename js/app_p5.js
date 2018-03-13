@@ -1,4 +1,4 @@
-// kod projektu [wpisz nazwę]
+// kod projektu [memory]
 function setup() {
   // put setup code here
 }
