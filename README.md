@@ -1,4 +1,4 @@
-﻿# Meomory
+﻿# Memory
 	Implementacja gry Memory w JavaScript.
 
 ## Uruchomienie
