@@ -59,14 +59,17 @@ function revealCard(nr) {
   $('#c'+nr).css('background-image', obraz);
   $('#c'+nr).addClass('cardA');
   $('#c'+nr).removeClass('card');
-}
 
 if(oneVisible == false)
-{
-  //first card
-  oneVisible = true;
-}
-else
-{
-  //second card
+  {
+    //first card
+    oneVisible = true;
+  }
+  else
+  {
+    //second card
+    turnCounter++;
+    $('.score').html('Turn counter: '+turnCounter);
+    oneVisible = false;
+  }
 }
