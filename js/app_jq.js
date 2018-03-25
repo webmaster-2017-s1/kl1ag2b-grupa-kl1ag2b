@@ -60,3 +60,13 @@ function revealCard(nr) {
   $('#c'+nr).addClass('cardA');
   $('#c'+nr).removeClass('card');
 }
+
+if(oneVisible == false)
+{
+  //first card
+  oneVisible = true;
+}
+else
+{
+  //second card
+}
