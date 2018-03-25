@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="utf-8">
@@ -8,11 +8,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <!--link rel="stylesheet" href="css/normalize.css"-->
   <link rel="stylesheet" href="css/main.css">
-</head>
-
+  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
@@ -61,23 +59,15 @@
   </article>
 </main>
 
+<button type="button" class="btn" onclick="location.reload();">Reset</button>
+
 <div id="footer">
   Strona w sieci od 2018r. &copy; Wszelkie prawa zastrzeżone.
 </div>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"></script>
-  <!-- skrypt umożliwiający sprawdzanie możliwośći przeglądarki -->
-  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-  <!--biblioteka jQuery-->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <!--jeżeli nie pobrano jQuery z sieci, spróbuj załadować ją z podfolderu js -->
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <!-- ewentualny kod JS ogólny -->
-  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!--kod aplikacji w jQuery-->
   <script src="js/app_jq.js"></script>
 </body>
-
 </html>

@@ -49,3 +49,5 @@ c16.addEventListener("click", function() { revealCard(16); });
 c17.addEventListener("click", function() { revealCard(17); });
 c18.addEventListener("click", function() { revealCard(18); });
 c19.addEventListener("click", function() { revealCard(19); });
+
+var oneVisible = false;
