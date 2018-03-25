@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
 	background-color: #26282E;
-	color: #45bfe8;
+	color: #fff;
   font-family: 'Lobster', sans-serif;
   font-size: 28px;
 }
@@ -26,9 +26,21 @@ h1 {
   margin-left: 40px;
 }
 
+#footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+  color: #45c5ef;
+  text-align: center;
+  background-color: #26282E;
+  height: 30px;
+  width: 100%;
+  border-top: 4px solid #fff;
+}
+
 .opcja {
   float: left;
-  border-right: 3px solid #45bfe8;
+  border-right: 3px solid #fff;
   padding: 10px;
   min-width: 100px;
 }
@@ -37,14 +49,10 @@ h1 {
   background-color: #525766;
 }
 
-#footer {
-  position: fixed;
-  bottom: 0;
-  font-size: 15px;
-  color: black;
-  text-align: center;
-  background-color: white;
-  height: 30px;
-  width: 100%;
-  border-top: 4px solid #45bfe8;
+.text {
+  text-align: justify;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
