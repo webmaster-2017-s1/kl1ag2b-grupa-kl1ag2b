@@ -68,10 +68,13 @@ function revealCard(nr) {
   {
     //first card
     oneVisible = true;
+    visible_nr = nr;
   }
   else
   {
     //second card
+    if(cards[visible_nr] == cards[nr])
+
     turnCounter++;
     $('.score').html('Turn counter: '+turnCounter);
     oneVisible = false;
