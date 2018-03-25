@@ -63,7 +63,7 @@ function revealCard(nr) {
   var opacityValue = $('#c'+nr).css('opacity');
 
   if (opacityValue != 0){
-    
+
     var obraz = "url(img/" + cards[nr] + ")";
 
     $('#c'+nr).css('background-image', obraz);
@@ -85,7 +85,7 @@ function revealCard(nr) {
       }
         else
       {
-
+        setTimeout(function() { restore2Cards(nr, visible_nr) }, 1000);
       }
       turnCounter++;
       $('.score').html('Turn counter: '+turnCounter);
@@ -100,4 +100,15 @@ function hide2Cards(nr1, nr2) {
 
   pairsLeft--;
 
+}
+
+function restore2Cards(nr1, nr2)
+{
+	$('#c'+nr1).css('background-image', 'url(img/karta.png)');
+	$('#c'+nr1).addClass('card');
+	$('#c'+nr1).removeClass('cardA');
+
+	$('#c'+nr2).css('background-image', 'url(img/karta.png)');
+	$('#c'+nr2).addClass('card');
+	$('#c'+nr2).removeClass('cardA');
 }
