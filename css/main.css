@@ -36,3 +36,15 @@ h1 {
 .opcja:hover {
   background-color: #525766;
 }
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  border-top: 4px solid #45bfe8;
+}
