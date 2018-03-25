@@ -5,7 +5,7 @@
 
 	Wiktor Malinowski -- project manager & programmer -- e-mail: wiktor.malinowski@lo1.sandomierz.pl
 	
-	Micha³ Rawski -- programmer -- e-mail: michal.rawski@lo1.sandomierz.pl
+	Micha³ Rawski -- odpowiedzialny za commity -- e-mail: michal.rawski@lo1.sandomierz.pl
 
 	Adam Garnuszek -- programer -- e-mail: adam.garnuszek@lo1.sandomierz.pl
 
@@ -16,3 +16,9 @@
 
     CSS3, HTML5
     jQuery, Modernizr, Normalize.css, p5js
+
+
+#SPOSÓB PROWADZENIA PRACY
+
+	Przez kilka tygodni spotykaliœmy siê u jednego z cz³onków grupy i tworzyliœmy grê w osobnym folderze, robi¹c tzw. "grê testow¹". Nastêpnie 
+	kiedy by³a ona ju¿ skoñczona zaczeliœmy wgrywaæ na githuba, poprawiaj¹c ewentualne b³êdy lub dodaj¹c coœ od siebie.
