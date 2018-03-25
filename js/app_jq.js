@@ -1,5 +1,8 @@
 var cards = ["o1.png", "o2.png", "o3.png", "o4.png", "o5.png", "o6.png", "o7.png", "o8.png", "o9.png", "o10.png"];
 
+var shuffleArray = (array) => $.map(array, (element) => [element, element]).sort(() => 0.87 - Math.random());
+cards = shuffleArray(cards);
+
 var c0 = document.getElementById('c0');
 var c1 = document.getElementById('c1');
 var c2 = document.getElementById('c2');
@@ -52,6 +55,7 @@ c19.addEventListener("click", function() { revealCard(19); });
 
 var oneVisible = false;
 var turnCounter = 0;
+var visible_nr;
 
 function revealCard(nr) {
   var obraz = "url(img/" + cards[nr] + ")";
@@ -60,16 +64,14 @@ function revealCard(nr) {
   $('#c'+nr).addClass('cardA');
   $('#c'+nr).removeClass('card');
 
-if(oneVisible == false)
+  if(oneVisible == false)
   {
     //first card
+
     oneVisible = true;
   }
   else
   {
     //second card
-    turnCounter++;
-    $('.score').html('Turn counter: '+turnCounter);
-    oneVisible = false;
   }
 }
