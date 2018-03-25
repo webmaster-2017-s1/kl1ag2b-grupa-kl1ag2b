@@ -56,13 +56,16 @@ c19.addEventListener("click", function() { revealCard(19); });
 var oneVisible = false;
 var turnCounter = 0;
 var visible_nr;
+var lock = false;
 var pairsLeft = 10;
 
 function revealCard(nr) {
 
   var opacityValue = $('#c'+nr).css('opacity');
 
-  if (opacityValue != 0){
+  if (opacityValue != 0 && lock == false){
+
+    lock = true;
 
     var obraz = "url(img/" + cards[nr] + ")";
 
@@ -75,6 +78,7 @@ function revealCard(nr) {
       //first card
       oneVisible = true;
       visible_nr = nr;
+      lock = false;
     }
     else
     {
@@ -98,6 +102,7 @@ function hide2Cards(nr1, nr2) {
   $('#c'+nr1).css('opacity', '0');
   $('#c'+nr2).css('opacity', '0');
 
+  lock = false;
   pairsLeft--;
 
 }
@@ -111,4 +116,6 @@ function restore2Cards(nr1, nr2)
 	$('#c'+nr2).css('background-image', 'url(img/karta.png)');
 	$('#c'+nr2).addClass('card');
 	$('#c'+nr2).removeClass('cardA');
+
+	lock = false;
 }
