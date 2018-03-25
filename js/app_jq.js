@@ -74,9 +74,26 @@ function revealCard(nr) {
   {
     //second card
     if(cards[visible_nr] == cards[nr])
+    {
+
+      setTimeout(function() { hide2Cards(nr, visible_nr) }, 500);
+
+    }
+      else
+    {
+
+    }
 
     turnCounter++;
     $('.score').html('Turn counter: '+turnCounter);
     oneVisible = false;
   }
+}
+
+function hide2Cards(nr1, nr2) {
+  $('#c'+nr1).css('opacity', '0');
+  $('#c'+nr2).css('opacity', '0');
+
+  pairsLeft--;
+
 }
