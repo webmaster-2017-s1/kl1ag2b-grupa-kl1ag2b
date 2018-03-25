@@ -56,37 +56,41 @@ c19.addEventListener("click", function() { revealCard(19); });
 var oneVisible = false;
 var turnCounter = 0;
 var visible_nr;
+var pairsLeft = 10;
 
 function revealCard(nr) {
-  var obraz = "url(img/" + cards[nr] + ")";
 
-  $('#c'+nr).css('background-image', obraz);
-  $('#c'+nr).addClass('cardA');
-  $('#c'+nr).removeClass('card');
+  var opacityValue = $('#c'+nr).css('opacity');
 
-  if(oneVisible == false)
-  {
-    //first card
-    oneVisible = true;
-    visible_nr = nr;
-  }
-  else
-  {
-    //second card
-    if(cards[visible_nr] == cards[nr])
+  if (opacityValue != 0){
+    
+    var obraz = "url(img/" + cards[nr] + ")";
+
+    $('#c'+nr).css('background-image', obraz);
+    $('#c'+nr).addClass('cardA');
+    $('#c'+nr).removeClass('card');
+
+    if(oneVisible == false)
     {
-
-      setTimeout(function() { hide2Cards(nr, visible_nr) }, 500);
-
+      //first card
+      oneVisible = true;
+      visible_nr = nr;
     }
-      else
+    else
     {
+      //second card
+      if(cards[visible_nr] == cards[nr])
+      {
+        setTimeout(function() { hide2Cards(nr, visible_nr) }, 600);
+      }
+        else
+      {
 
+      }
+      turnCounter++;
+      $('.score').html('Turn counter: '+turnCounter);
+      oneVisible = false;
     }
-
-    turnCounter++;
-    $('.score').html('Turn counter: '+turnCounter);
-    oneVisible = false;
   }
 }
 
