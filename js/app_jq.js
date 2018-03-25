@@ -51,3 +51,12 @@ c18.addEventListener("click", function() { revealCard(18); });
 c19.addEventListener("click", function() { revealCard(19); });
 
 var oneVisible = false;
+var turnCounter = 0;
+
+function revealCard(nr) {
+  var obraz = "url(img/" + cards[nr] + ")";
+
+  $('#c'+nr).css('background-image', obraz);
+  $('#c'+nr).addClass('cardA');
+  $('#c'+nr).removeClass('card');
+}
