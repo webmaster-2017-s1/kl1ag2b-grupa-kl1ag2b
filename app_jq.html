@@ -1,43 +1,82 @@
 <!doctype html>
-<html class="no-js" lang="pl">
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Projekt Memory Game</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Projekt Memory Game</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-  <body>
+</head>
 
-    <!-- Tutaj dodajesz swój kod -->
-    <h1>Projekt Memory Game</h1>
-    <div id="menu">
-        <a href="index.html" class="opcja">Strona główna</a>
-        <a href="app_jq.html" class="opcja">Wersja jQuery</a>
-        <a href="app_p5.html" class="opcja">Wersja p5js</a>
+<body>
+
+  <!--Tutaj dodajesz swój kod -->
+<header>
+  <h1>Projekt Memory Game</h1>
+  <div id="menu">
+      <a href="index.html" class="opcja">Strona główna</a>
+      <a href="app_jq.html" class="opcja">Wersja jQuery</a>
+      <a href="app_p5.html" class="opcja">Wersja p5js</a>
+  </div>
+</header>
+
+<main>
+  <article>
+    <div class="board">
+
+      <div class="card" id="c0"></div>
+      <div class="card" id="c1"></div>
+      <div class="card" id="c2"></div>
+      <div class="card" id="c3"></div>
+
+      <div class="card" id="c4"></div>
+      <div class="card" id="c5"></div>
+      <div class="card" id="c6"></div>
+      <div class="card" id="c7"></div>
+
+      <div class="card" id="c8"></div>
+      <div class="card" id="c9"></div>
+      <div class="card" id="c10"></div>
+      <div class="card" id="c11"></div>
+
+      <div class="card" id="c12"></div>
+      <div class="card" id="c13"></div>
+      <div class="card" id="c14"></div>
+      <div class="card" id="c15"></div>
+
+      <div class="card" id="c16"></div>
+      <div class="card" id="c17"></div>
+      <div class="card" id="c18"></div>
+      <div class="card" id="c19"></div>
+
     </div>
+  </article>
+</main>
 
-    <div id="footer">
-      Strona w sieci od 2018r. &copy; Wszelkie prawa zastrzeżone.
-    </div>
+<div id="footer">
+  Strona w sieci od 2018r. &copy; Wszelkie prawa zastrzeżone.
+</div>
 
-    <!-- skrypt umożliwiający sprawdzanie możliwośći przeglądarki -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <!--biblioteka jQuery-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!--jeżeli nie pobrano jQuery z sieci, spróbuj załadować ją z podfolderu js -->
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <!-- ewentualny kod JS ogólny -->
-    <script src="js/main.js"></script>
-    <!--kod aplikacji w jQuery-->
-    <script src="js/app_jq.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+  <!-- skrypt umożliwiający sprawdzanie możliwośći przeglądarki -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <!--biblioteka jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!--jeżeli nie pobrano jQuery z sieci, spróbuj załadować ją z podfolderu js -->
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <!-- ewentualny kod JS ogólny -->
+  <script src="js/main.js"></script>
+  <!--kod aplikacji w jQuery-->
+  <script src="js/app_jq.js"></script>
+</body>
 
-  </body>
 </html>
