@@ -21,6 +21,15 @@ h1 {
   margin-bottom: 0px;
 }
 
+h2{
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 20px 0 20px 0;
+  color: #45c5ef;
+}
+
 #menu {
   margin-left: 40px;
   position: absolute;

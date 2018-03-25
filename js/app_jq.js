@@ -102,8 +102,14 @@ function hide2Cards(nr1, nr2) {
   $('#c'+nr1).css('opacity', '0');
   $('#c'+nr2).css('opacity', '0');
 
-  lock = false;
   pairsLeft--;
+
+  if(pairsLeft == 0)
+	{
+		$('.board').html('<h2>You win!<br>Done in '+turnCounter+' turns</h2>');
+	}
+
+  lock = false;
 
 }
 
