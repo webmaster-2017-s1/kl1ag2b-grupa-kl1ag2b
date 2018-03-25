@@ -67,11 +67,13 @@ function revealCard(nr) {
   if(oneVisible == false)
   {
     //first card
-
     oneVisible = true;
   }
   else
   {
     //second card
+    turnCounter++;
+    $('.score').html('Turn counter: '+turnCounter);
+    oneVisible = false;
   }
 }
