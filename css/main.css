@@ -37,7 +37,7 @@ h2{
 }
 
 #footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   font-size: 15px;
   color: #45c5ef;
