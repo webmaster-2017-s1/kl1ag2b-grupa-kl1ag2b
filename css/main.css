@@ -131,7 +131,28 @@ h2{
     filter: brightness(85%);
 }
 
+.btn1 {
+    padding: 0.5em 3em;
+    background: white;
+    color: #45bfe8;
+    border: 4px solid #45bfe8;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    margin:30px auto;
+    filter: brightness(85%);
+    margin-top: 50px;
+}
+
 .btn:hover{
+  filter: brightness(100%);
+  border: 4px solid red;
+}
+
+.btn1:hover{
   filter: brightness(100%);
   border: 4px solid red;
 }
