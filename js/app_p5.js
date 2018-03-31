@@ -1,4 +1,4 @@
-var idList = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8 ];
+var idList = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
 var rows = 4;
 var cols = 4;
 var index = 0;
@@ -39,7 +39,7 @@ function mouseClicked() {
   }
   if (clickCounter == 2) {
     if (firstBlock == secondBlock) {
-      console.log("match");
+      console.log("para");
       matchCounter++;
       for (var i = 0; i < blocks.length; i++) {
         if (blocks[i].id == firstBlock) {
@@ -48,7 +48,7 @@ function mouseClicked() {
       }
       console.log(matchCounter);
     } else {
-      console.log("fail");
+      console.log("pudło");
       for (var i = 0; i < blocks.length; i++) {
         if (blocks[i].id == firstBlock || blocks[i].id == secondBlock) {
           blocks[i].colorState = blocks[i].back;
