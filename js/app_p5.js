@@ -9,6 +9,11 @@ var clickCounter = 0;
 var matchCounter = 0;
 var firstBlock;
 var secondBlock;
+// zmienne zapisujące kod naciskanych kwadratów
+var firstX;
+var secondX;
+var firstY;
+var secondY;
 
 function setup() {
   createCanvas(320, 320);
@@ -37,8 +42,9 @@ function mouseClicked() {
   for (var i = 0; i < blocks.length; i++) {
     blocks[i].clicked();
   }
-  if (clickCounter == 2) {
-    if (firstBlock == secondBlock) {
+  print(clickCounter);
+  if (clickCounter == 3) {
+    if (firstBlock == secondBlock && (firstX != secondX || firstY != secondY)) {
       console.log("para");
       matchCounter++;
       for (var i = 0; i < blocks.length; i++) {
@@ -82,12 +88,15 @@ function Block(x, y, w, id, alive) {
   this.clicked = function() {
     if (this.alive) {
       if (mouseX > this.x && mouseX < this.x + this.w && mouseY > this.y && mouseY < this.y + this.w) {
-        this.colorState = this.front;
-
+        if (clickCounter == 0 || clickCounter == 1) this.colorState = this.front;
         if (clickCounter == 0) {
           firstBlock = this.id;
+          firstX = this.x;
+          firstY = this.y;
         } else if (clickCounter == 1) {
           secondBlock = this.id;
+          secondX = this.x;
+          secondY = this.y;
         }
         clickCounter++;
 
