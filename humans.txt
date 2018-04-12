@@ -3,11 +3,11 @@
 
 # TEAM
 
-	Wiktor Malinowski -- project manager & programmer -- e-mail: wiktor.malinowski@lo1.sandomierz.pl
+	Wiktor Malinowski -- project manager & programmer odpowiedzialny za grê w p5 -- e-mail: wiktor.malinowski@lo1.sandomierz.pl
 	
-	Micha³ Rawski -- odpowiedzialny za commity -- e-mail: michal.rawski@lo1.sandomierz.pl
+	Micha³ Rawski -- programmer odpowiedzialny za grê w jQuery -- e-mail: michal.rawski@lo1.sandomierz.pl
 
-	Adam Garnuszek -- programer -- e-mail: adam.garnuszek@lo1.sandomierz.pl
+	Adam Garnuszek -- programer odpowiedzialny za grê w p5-- e-mail: adam.garnuszek@lo1.sandomierz.pl
 
 # THANKS
 
